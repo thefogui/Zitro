@@ -30,7 +30,7 @@ VUE_PORT=8080
 Una vez que tengamos el fichero .env en su sitio podemos iniciar la aplicación mediante docker
 
 ```
-docker compose up
+docker compose up -d
 ```
 
 La aplicación consiste de 2 aplicaciones una hecha con PHP puro que sirve como backend proporcionando un sistema de API. Esta API la consume el entorno de frontend para gestionar la información que se genera mediante las diferentes acciones que realiza los usuarios.

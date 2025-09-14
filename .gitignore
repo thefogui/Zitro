@@ -1,0 +1,45 @@
+# ===========================
+# Node / Vue frontend
+# ===========================
+# Node modules
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env.local
+/frontend/.env.*.local
+
+# Logs
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Editor config files
+/frontend/.idea/
+/frontend/.vscode/
+/frontend/.DS_Store
+
+# ===========================
+# PHP backend
+# ===========================
+/backend/vendor/
+/backend/.env
+/backend/.DS_Store
+/backend/.idea/
+/backend/.vscode/
+/backend/node_modules/   # en caso de que tengas Node aquí también
+/backend/composer.lock    # opcional si quieres ignorar lock file
+
+# ===========================
+# Base / root
+# ===========================
+# MacOS
+.DS_Store
+
+# Docker
+/db_data/
+db_data_test/
+
+# Logs
+*.log
+
+# Environment files
+.env

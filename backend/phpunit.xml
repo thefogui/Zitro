@@ -1,0 +1,17 @@
+<phpunit bootstrap="tests/bootstrap.php"
+         colors="true"
+         verbose="true">
+    <php>
+        <env name="DB_DATABASE" value="myapp_test"/>
+        <env name="DB_USERNAME" value="myuser"/>
+        <env name="DB_PASSWORD" value="mypassword"/>
+        <env name="DB_HOST" value="db_test"/>
+        <ini name="error_reporting" value="-1" />
+        <ini name="display_errors" value="1" />
+    </php>
+    <testsuites>
+        <testsuite name="App Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

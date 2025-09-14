@@ -35,6 +35,8 @@ docker compose up -d
 
 La aplicación consiste de 2 aplicaciones una hecha con PHP puro que sirve como backend proporcionando un sistema de API. Esta API la consume el entorno de frontend para gestionar la información que se genera mediante las diferentes acciones que realiza los usuarios.
 
+En la raiz del proyecto hay una imagen con el diagrama de clases.
+
 Cuando se inicia la aplicación por primera vez se pide que cree un usuario administrador, una vez configurado este usuario, el sistema hace el login en la plataforma. El login se ha gestionadno de mnaera sencilla y hace pocas validaciones. Se ha usado el sistema de JWT token y algunas peticiones que cambian estados de la base de datos require que se envie este token en el header usando el protocolo de Authentication Bearer Token.
 
 Una vez que se inicia el login veremos el dashboard que contiene diferente tabs para gestionar los datos de la base de datos. Es muy importante crear el usuario inicial para que se peude registar más usuarios. De momento todos los usuarios son tratados como administradores aunque no se refleje en la base de datos. El endpoint de login retorna un token que pude ser utilizado para futuras peticiones. Este token tiene duración de 1 hora.

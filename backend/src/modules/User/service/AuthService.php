@@ -50,7 +50,7 @@ class AuthService {
         }
 
         if (!password_verify($password, $user->password)) {
-            throw new Exception('Invalid credentials', HttpStatus::UNAUTHORIZED);
+            throw new Exception('Invalid credentials', HttpStatus::FORBIDDEN);
         }
 
         $issuedAt = time();
